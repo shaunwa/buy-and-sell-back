@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,12 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.10.1",
+    "@hapi/boom": "^9.1.0",
     "@hapi/hapi": "^19.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/node": "^7.10.1",
     "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.1"
+    "@babel/preset-env": "^7.10.1",
+    "nodemon": "^2.0.4"
   }
 }
